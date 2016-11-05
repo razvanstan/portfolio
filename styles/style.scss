@@ -1,12 +1,7 @@
 @import "variables";
-@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
-
-//@import "animate";
-//@import "animsition";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
 
 @import "../assets/css/sprite.scss";
-@import "brandico";
-
 
 @import "main";
 @import "navbar";

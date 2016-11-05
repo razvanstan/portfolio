@@ -33,13 +33,13 @@ gulp.task('responsive', function () {
 
 gulp.task("jade", function() {
     return gulp.src(['./templates/index.jade'])
-        .pipe(jade())
+        .pipe(jade({pretty:true}))
         .pipe(gulp.dest('./'));
 });
 
 gulp.task('sass', function () {
-    return gulp.src('./styles/style.scss')
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    return gulp.src(['./styles/style.scss', './styles/assets.scss'])
+        .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./'));
 });
 
