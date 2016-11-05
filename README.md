@@ -1,2 +1,2 @@
-# portfolio
-Portfolio
+# Portfolio
+Udacity Front-end Nanodegree project.
