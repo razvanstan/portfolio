@@ -1,0 +1,95 @@
+- var headerIconW = '32'
+
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport",content="width=device-width, initial-scale=1")
+
+        title Razvan Stan
+
+        link(rel="stylesheet", href="style.css", type="text/css")
+
+    body
+
+        section.container.main-container
+
+            include _navbar
+
+            header.row
+
+                article.col-sm-6
+                    .fb-video(data-href="https://www.facebook.com/espresoh.tech/videos/1184158588260971/", data-width="auto", data-show-text="false")
+
+                article.col-sm-6
+                    h2.subtitle Razvan Stan
+                    p Timisoara, Romania
+                    p Passionate web developer
+                    p.pb20 Front-end developer @ [e-spres-oh] since Jun 2012
+
+                    include _competences
+
+            section.text-center
+                blockquote
+                    p Choose a job you love, and you will never have to work a day in your life.
+                    footer Confucius
+
+            section
+                h1.text-center Portfolio
+
+                ul.list-unstyled.list-inline.thumbnails-container
+
+                    li.thumbnail.effect-bubba(data-toggle="modal", data-target="#modal-udacity")
+                        .thumbnail-wrapper
+                            .thumbnail-header
+                                img.img-responsive(src="images/project-udacity.jpg", alt="Udacity Frontend Nanodegree cover")
+                            .thumbnail-content
+                                h2.thumbnail-title Udacity - Frontend Nanodegree
+                                p.hidden-xs As a student at Udacity, I need to put in practice things that I've learned in few...
+
+                                .thumbnail-mobile-description.visible-xs
+                                    include _modal-content-udacity
+
+                        .thumbnail-caption.hidden-xs
+                            .thumbnail-caption-content
+                                .img-plus
+                                .caption-text MORE
+
+                    li.thumbnail.effect-bubba(data-toggle="modal", data-target="#modal-povesti-romanesti")
+                        .thumbnail-wrapper
+                            .thumbnail-header
+                                img.img-responsive(src="images/project-povesti-romanesti.jpg", alt="Udacity cover for website optimization project")
+                            .thumbnail-content
+                                h2.thumbnail-title Povesti Romanesti
+                                p.hidden-xs A modern storytelling app for iPad that brings the classic Romanian stories back to life...
+                                .thumbnail-mobile-description.visible-xs
+                                    include _modal-content-povesti
+
+                        .thumbnail-caption.hidden-xs
+                            .thumbnail-caption-content
+                                .img-plus
+                                .caption-text MORE
+
+                    li.thumbnail.effect-bubba(data-toggle="modal", data-target="#modal-creativebook")
+                        .thumbnail-wrapper
+                            .thumbnail-header
+                                img.img-responsive(src="images/project-creativebook.jpg", alt="Creative Book cover project")
+                            .thumbnail-content
+                                h2.thumbnail-title Creative Book
+                                p.hidden-xs Drive your business to the next level. New way to make creative things with your work...
+                                .thumbnail-mobile-description.visible-xs
+                                    include _modal-content-creativebook
+
+                        .thumbnail-caption.hidden-xs
+                            .thumbnail-caption-content
+                                .img-plus
+                                .caption-text MORE
+
+
+            footer.text-center
+                hr
+                p.small.text-primary &copy; 2016 by Razvan Stan
+
+            include _modals
+
+        include _scripts

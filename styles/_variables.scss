@@ -1,0 +1,22 @@
+$fa-font-path:  "//netdna.bootstrapcdn.com/font-awesome/4.4.0/fonts" !default;
+
+$brand-primary: #093955;
+$brand-success: #2ac6ad;
+$brand-danger:  #ea3f1d;
+
+$text-color:    #494947;
+
+$font-family-base: 'Open Sans', sans-serif, Arial;
+$font-family-condensed: 'Open Sans Condensed', sans-serif;
+
+$headings-font-family: $font-family-base;
+$headings-color: $brand-primary;
+
+$font-family-sans-serif: $font-family-base;
+$font-size-base:         16px;
+$line-height-base:       1.5;
+
+$navbar-border-radius: 0px;
+
+$grid-gutter-width:         30px !default;
+$container-large-desktop: (960px + $grid-gutter-width);

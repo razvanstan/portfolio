@@ -1,0 +1,14 @@
+
+<svg width="194px" height="51px" viewBox="129 179 194 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(129.000000, 179.000000)" font-family="Digital-Medium" font-weight="normal">
+        <text id="RazvanStan" font-size="36">
+            <tspan x="0" y="34" fill="#2AC6AD">Razvan</tspan>
+            <tspan x="122.868" y="34" fill="#093955">Stan</tspan>
+        </text>
+        <text id="Front-end-developer" font-size="12.3000002" fill="#093955">
+            <tspan x="1" y="48">Front-</tspan>
+            <tspan x="32.2420005" y="48" font-size="12">end</tspan>
+            <tspan x="52.7020005" y="48"> developer | Timisoara, RO</tspan>
+        </text>
+    </g>
+</svg>

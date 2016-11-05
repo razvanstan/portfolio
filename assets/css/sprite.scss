@@ -1,0 +1,280 @@
+.icon {
+    font-size: 160px;
+    &:before {
+      content:' ';
+      vertical-align:middle;
+      display: inline-block;
+      background-image: url("assets/svg/sprite.svg");
+      background-repeat: no-repeat;
+      background-size: 42.175em 37.38125em;
+
+      .no-svg & {
+        background-image: url("../svg/sprite.png");
+      }
+    }
+}
+
+
+
+
+.icon.angular {
+  &:before {
+      background-position: 0em 0em;
+      width: 1.6em;
+      height: 1.7em;
+    }
+  }
+
+  @mixin icon-angular(){
+    @extend .angular;
+  }
+
+
+.icon.bootstrap {
+  &:before {
+      background-position: -1.6em -1.7em;
+      width: 1.6em;
+      height: 1.6em;
+    }
+  }
+
+  @mixin icon-bootstrap(){
+    @extend .bootstrap;
+  }
+
+
+.icon.css3 {
+  &:before {
+      background-position: -3.2em -3.3em;
+      width: 2.418225em;
+      height: 3.41333125em;
+    }
+  }
+
+  @mixin icon-css3(){
+    @extend .css3;
+  }
+
+
+.icon.git-icon {
+  &:before {
+      background-position: -5.61875em -6.71875em;
+      width: 1.6em;
+      height: 1.6em;
+    }
+  }
+
+  @mixin icon-git-icon(){
+    @extend .git-icon;
+  }
+
+
+.icon.grunt {
+  &:before {
+      background-position: -7.21875em -8.31875em;
+      width: 1.6em;
+      height: 2.15em;
+    }
+  }
+
+  @mixin icon-grunt(){
+    @extend .grunt;
+  }
+
+
+.icon.gulp {
+  &:before {
+      background-position: -8.81875em -10.46875em;
+      width: 1.6em;
+      height: 3.5375em;
+    }
+  }
+
+  @mixin icon-gulp(){
+    @extend .gulp;
+  }
+
+
+.icon.html5 {
+  &:before {
+      background-position: -10.41875em -14.00625em;
+      width: 3.2em;
+      height: 3.2em;
+    }
+  }
+
+  @mixin icon-html5(){
+    @extend .html5;
+  }
+
+
+.icon.jasmine {
+  &:before {
+      background-position: -13.61875em -17.20625em;
+      width: 1.6em;
+      height: 1.59375em;
+    }
+  }
+
+  @mixin icon-jasmine(){
+    @extend .jasmine;
+  }
+
+
+.icon.javascript {
+  &:before {
+      background-position: -15.21875em -18.8em;
+      width: 1.6em;
+      height: 1.6em;
+    }
+  }
+
+  @mixin icon-javascript(){
+    @extend .javascript;
+  }
+
+
+.icon.knockout {
+  &:before {
+      background-position: -16.81875em -20.4em;
+      width: 3.2em;
+      height: 0.775em;
+    }
+  }
+
+  @mixin icon-knockout(){
+    @extend .knockout;
+  }
+
+
+.icon.less-logo {
+  &:before {
+      background-position: -20.01875em -21.175em;
+      width: 6.01875em;
+      height: 2.69375em;
+    }
+  }
+
+  @mixin icon-less-logo(){
+    @extend .less-logo;
+  }
+
+
+.icon.logo {
+  &:before {
+      background-position: -26.0375em -23.86875em;
+      width: 1.2125em;
+      height: 0.31875em;
+    }
+  }
+
+  @mixin icon-logo(){
+    @extend .logo;
+  }
+
+
+.icon.mysql {
+  &:before {
+      background-position: -27.25em -24.1875em;
+      width: 1.6em;
+      height: 1.575em;
+    }
+  }
+
+  @mixin icon-mysql(){
+    @extend .mysql;
+  }
+
+
+.icon.nodejs {
+  &:before {
+      background-position: -28.85em -25.7625em;
+      width: 1.6em;
+      height: 1.80625em;
+    }
+  }
+
+  @mixin icon-nodejs(){
+    @extend .nodejs;
+  }
+
+
+.icon.photoshop-cc {
+  &:before {
+      background-position: -30.45em -27.56875em;
+      width: 3.72049375em;
+      height: 3.6274875em;
+    }
+  }
+
+  @mixin icon-photoshop-cc(){
+    @extend .photoshop-cc;
+  }
+
+
+.icon.php {
+  &:before {
+      background-position: -34.175em -31.2em;
+      width: 1.6em;
+      height: 0.84375em;
+    }
+  }
+
+  @mixin icon-php(){
+    @extend .php;
+  }
+
+
+.icon.sass {
+  &:before {
+      background-position: -35.775em -32.04375em;
+      width: 1.6em;
+      height: 1.2em;
+    }
+  }
+
+  @mixin icon-sass(){
+    @extend .sass;
+  }
+
+
+.icon.sketch {
+  &:before {
+      background-position: -37.375em -33.24375em;
+      width: 1.6em;
+      height: 1.5875em;
+    }
+  }
+
+  @mixin icon-sketch(){
+    @extend .sketch;
+  }
+
+
+.icon.woocommerce {
+  &:before {
+      background-position: -38.975em -34.83125em;
+      width: 1.6em;
+      height: 0.95625em;
+    }
+  }
+
+  @mixin icon-woocommerce(){
+    @extend .woocommerce;
+  }
+
+
+.icon.wordpress {
+  &:before {
+      background-position: -40.575em -35.7875em;
+      width: 1.6em;
+      height: 1.59375em;
+    }
+  }
+
+  @mixin icon-wordpress(){
+    @extend .wordpress;
+  }
+
+
+

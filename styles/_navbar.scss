@@ -1,0 +1,17 @@
+.header-icons {
+  margin-top: 17px;
+
+  li {
+    padding: 0;
+    vertical-align: top;
+
+    a {
+      font-size: 18px;
+      color: $brand-primary;
+      &:hover {
+        color: $brand-success;
+        text-decoration: none;
+      }
+    }
+  }
+}

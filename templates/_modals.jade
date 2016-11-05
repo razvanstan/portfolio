@@ -1,0 +1,44 @@
+#modal-udacity.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+    .modal-dialog
+        .modal-content
+            .modal-body
+                .media-object
+                    .pull-left
+                        .img-device-povesti-romanesti
+                    .pull-right
+                        .img-close(data-dismiss='modal')
+                    .media-body
+                        h2.modal-title Udacity - Frontend Nanodegree
+
+                        .modal-description
+                            include _modal-content-udacity
+
+#modal-povesti-romanesti.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+    .modal-dialog
+        .modal-content
+            .modal-body
+                .media-object
+                    .pull-left
+                        .img-device-povesti-romanesti
+                    .pull-right
+                        .img-close(data-dismiss='modal')
+                    .media-body
+                        h2.modal-title Povesti Romanesti
+                        a.modal-url(href="http://povestiromanesti.com/", target="_blank") http://povestiromanesti.com/
+
+                        include _modal-content-povesti
+
+#modal-creativebook.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+    .modal-dialog
+        .modal-content
+            .modal-body
+                .media-object
+                    .pull-left
+                        .img-device-povesti-romanesti
+                    .pull-right
+                        .img-close(data-dismiss='modal')
+                    .media-body
+                        h2.modal-title Creative Book
+                        a.modal-url(href="http://razvanstan.ro/creativebook/", target="_blank") http://razvanstan.ro/creativebook/
+
+                        include _modal-content-creativebook

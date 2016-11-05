@@ -1,0 +1,224 @@
+.thumbnails-container {
+
+  margin: 0 auto;
+  text-align: center;
+
+  .thumbnail {
+    text-align: left;
+    position: relative;
+    border-radius: 0;
+    border: none;
+    padding: 5px;
+    color: #666666;
+    margin: 6px 3px;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .thumbnail-wrapper {
+    background: #fff;
+  }
+}
+
+.thumbnail-content {
+  padding: 20px;
+
+  border-top: none;
+  border-left: 2px solid #efefef;
+  border-right: 2px solid #efefef;
+  border-bottom: 2px solid #efefef;
+
+  p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.thumbnail-title {
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  color: #222;
+  font-family: $font-family-base;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  margin-top: 20px;
+
+  &:before {
+    content: ' ';
+    height: 2px;
+    width: 80px;
+    background: #222;
+    position: absolute;
+    bottom: -10px;
+  }
+}
+
+.thumbnail-caption-content {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  .caption-text {
+    margin-top: 35px;
+    text-align: center;
+    font-weight: 700;
+    color: #222;
+  }
+}
+
+.img-plus {
+  width: 70px;
+  height: 2px;
+  background: $brand-primary;
+  position: relative;
+  margin-left: -5px;
+  display: inline-block;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    width: 2px;
+    height: 70px;
+    background: $brand-primary;
+    left: 50%;
+    margin-left: -1px;
+    top: -34px;
+  }
+}
+
+.effect-bubba:hover {
+
+  background: $brand-success;
+
+  .thumbnail-wrapper {
+    opacity: 0.1;
+  }
+
+  .thumbnail-caption-content {
+    display: block;
+  }
+}
+
+.effect-bubba .thumbnail-caption::before,
+.effect-bubba .thumbnail-caption::after {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  bottom: 3px;
+  left: 3px;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.effect-bubba .thumbnail-caption::before {
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
+  -webkit-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.effect-bubba .thumbnail-caption::after {
+  border-right: 2px solid #222;
+  border-left: 2px solid #222;
+  -webkit-transform: scale(1,0);
+  transform: scale(1,0);
+}
+
+.effect-bubba:hover .thumbnail-caption::before,
+.effect-bubba:hover .thumbnail-caption::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.effect-bubba .thumbnail-caption-content .img-plus {
+  opacity: 0;
+  margin-top: 30%;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(50%,-20px,0);
+  transform: translate3d(50%,-20px,0);
+}
+
+.effect-bubba .thumbnail-caption-content .caption-text {
+  padding: 20px 2.5em;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,20px,0);
+  transform: translate3d(0,20px,0);
+}
+
+.effect-bubba:hover .thumbnail-caption-content .img-plus {
+  opacity: 1;
+  -webkit-transform: translate3d(50%,0,0);
+  transform: translate3d(50%,0,0);
+}
+
+.effect-bubba:hover .thumbnail-caption-content .caption-text {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+
+@media (max-width: 637px ) {
+
+  .thumbnails-container {
+
+    .effect-bubba:hover {
+      background: none;
+
+      .thumbnail-wrapper {
+        opacity: 1;
+      }
+    }
+  }
+
+  .portfolio-technologies {
+    text-align: center;
+
+    li {
+      margin-top: 15px;
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min ){
+
+  .thumbnails-container .thumbnail {
+    width: 310px;
+    height: 390px;
+  }
+}
+
+
+@media (min-width: 638px ) and (max-width: 992px ) {
+
+  .modal-dialog {
+    width: 90%;
+    margin: 5% auto;
+
+    .media-object {
+      position: relative;
+      .pull-left {
+        float:none!important;
+
+        div {
+          margin: 0 auto;
+        }
+      }
+      .pull-right {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+      }
+    }
+  }
+}

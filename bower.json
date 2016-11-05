@@ -1,0 +1,9 @@
+{
+  "name": "Portofolio Project",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap-sass-official": "~v3.3.7",
+    "font-awesome": "~4.6.2"
+  }
+}

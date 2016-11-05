@@ -1,0 +1,10 @@
+.list-competences {
+  @extend .list-inline;
+  @extend .list-unstyled;
+
+  margin-bottom: 5px;
+
+  li {
+    vertical-align: bottom;
+  }
+}
