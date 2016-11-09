@@ -169,12 +169,6 @@ blockquote {
     top: 0;
     left: 0; }
 
-hr {
-  background-image: linear-gradient(to right, transparent, rgba(42, 198, 173, 0.3), transparent);
-  border: 0;
-  height: 1px;
-  margin: 30px 0; }
-
 .subtitle {
   margin-bottom: 15px;
   padding-bottom: 15px;
